@@ -1,35 +1,37 @@
-// Importamos el modulo express 
-const express = require("express"); // Importamos express para crear el servidor
-const bodyParser = require("body-parser"); // importamos body-parser para parsear el cuerpo de las peticiones
-const cors = require("cors");// Importamos cors para permitir peticiones desde otros dominios
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const app = express();
 
-const app = express();// Creamos una instancia de express
-
-var corsOptions = {
-  origin: "http://localhost:8081"// Configuramos las opciones de cors para permitir peticiones desde el dominio http://localhost:8081
+const corsOptions = {
+  origin: "http://localhost:8081"
 };
 
 app.use(cors(corsOptions));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
-app.use(bodyParser.json());// Configuramos body-parser para parsear el cuerpo de las peticiones con content-type application/json
-// app.use(express.json()); // Alternativa a bodyParser para parsear JSON, pero body
+const db = require("./biblioteca/models");
 
-app.use(bodyParser.urlencoded({ extended: true }));// Configuramos body-parser para parsear el cuerpo de las peticiones con content-type application/x-www-form-urlencoded
+db.sequelize.sync()
+  .then(() => {
+    console.log("Base de datos sincronizada.");
+  })
+  .catch(err => {
+    console.error("Error al sincronizar la base de datos:", err.message);
+  });
 
-const db = require("./app/models");
-db.sequelize.sync();
-//forza la sincronización de la base de datos, si se desea que se creen las tablas si no existen
 
-// simple route
+require("./biblioteca/routes/estudiante.route")(app);
+require("./biblioteca/routes/libro.route")(app);
+require("./biblioteca/routes/prestamo.route")(app);
+
 app.get("/", (req, res) => {
-  res.json({ message: "UMG Web Application" });
+  res.json({ message: "Bienvenido a la API de la biblioteca." });
 });
-
-require("./app/routes/cliente.route.js")(app);
-//require("./app/routes/turorial.routes.js")(app);
 
 const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
+  console.log(`Servidor corriendo en el puerto ${PORT}.`);
 });

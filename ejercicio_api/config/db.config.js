@@ -1,15 +1,10 @@
 module.exports = {
-  HOST: "ep-odd-bar-a4m6ozo2-pooler.us-east-1.aws.neon.tech",
-  USER: "neondb_owner",
-  PASSWORD: "npg_OPI4AivGlo0c",
-  DB: "neondb",
+  HOST: "localhost",
+  PORT: 5432,
+  USER: "postgres",
+  PASSWORD: "1234",
+  DB: "postgres",
   dialect: "postgres",
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false
-    }
-  },
   pool: {
     max: 5,
     min: 0,

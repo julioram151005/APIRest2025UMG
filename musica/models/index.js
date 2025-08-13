@@ -17,8 +17,6 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.estudiante = require("./estudiante.model.js")(sequelize, Sequelize);
-db.libros = require("./libro.model.js")(sequelize, Sequelize);
-db.prestamo = require("./prestamo.model.js")(sequelize, Sequelize);
+db.musica = require("./musica.model.js")(sequelize, Sequelize);
 
 module.exports = db;

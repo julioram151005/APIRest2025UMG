@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-const db = require("./musica/models");
+const db = require("./biblioteca/models");
 
 db.sequelize.sync()
   .then(() => {
@@ -23,11 +23,12 @@ db.sequelize.sync()
   });
 
 
-require("./musica/routes/musica.route")(app);
-
+require("./biblioteca/routes/estudiante.route")(app);
+require("./biblioteca/routes/libro.route")(app);
+require("./biblioteca/routes/prestamo.route")(app);
 
 app.get("/", (req, res) => {
-  res.json({ message: "Bienvenido a la API de la musica." });
+  res.json({ message: "Bienvenido a la API de la biblioteca." });
 });
 
 const PORT = process.env.PORT || 8081;

@@ -8,18 +8,10 @@ module.exports = (sequelize, Sequelize) => {
         libroId: {
             type: Sequelize.INTEGER,
             allowNull: false,
-            references: {
-                model: "libros",
-                key: "id"
-            }
         },
         estudianteId: {
             type: Sequelize.INTEGER,
             allowNull: false,
-            references: {
-                model: "estudiantes",
-                key: "id"
-            }
         },
         fechaPrestamo: {
             type: Sequelize.DATE,

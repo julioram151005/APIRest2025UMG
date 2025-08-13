@@ -11,9 +11,7 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
-const db = require("./musica/models");
-
+const db = require("./ejercicio_api/models");
 db.sequelize.sync()
   .then(() => {
     console.log("Base de datos sincronizada.");
@@ -22,12 +20,13 @@ db.sequelize.sync()
     console.error("Error al sincronizar la base de datos:", err.message);
   });
 
-
-require("./musica/routes/musica.route")(app);
-
+require("./ejercicio_api/routes/cliente.route")(app);
+require("./ejercicio_api/routes/pedidos.route")(app);
+require("./ejercicio_api/routes/detpedido.route")(app);
+require('./ejercicio_api/routes/productos.route')(app);
 
 app.get("/", (req, res) => {
-  res.json({ message: "Bienvenido a la API de la musica." });
+  res.json({ message: "Bienvenido a la API de pedidos." });
 });
 
 const PORT = process.env.PORT || 8081;

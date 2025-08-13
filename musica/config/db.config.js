@@ -1,6 +1,6 @@
 module.exports = {
   HOST: "ep-morning-poetry-a4jscw3c-pooler.us-east-1.aws.neon.tech",
-  PORT: 5432, // Puerto por defecto de PostgreSQL
+  PORT: 5432,
   USER: "neondb_owner",
   PASSWORD: "npg_NM0wjqAJ3ZIH",
   DB: "neondb",
@@ -8,8 +8,9 @@ module.exports = {
   dialectOptions: {
     ssl: {
       require: true,
-      rejectUnauthorized: false // necesario para conexiones SSL en Neon
-    }
+      rejectUnauthorized: false
+    },
+    sslmode: 'require'
   },
   pool: {
     max: 5,

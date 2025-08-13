@@ -9,8 +9,7 @@ module.exports = {
     ssl: {
       require: true,
       rejectUnauthorized: false
-    },
-    sslmode: 'require'
+    }
   },
   pool: {
     max: 5,

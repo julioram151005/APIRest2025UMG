@@ -4,14 +4,16 @@
   const app = express();
 
   const corsOptions = {
-    origin: "http://localhost:8081"
+    origin: "*"
+  //  origin: "http://localhost:8081"
   };
+
   app.use(cors(corsOptions));
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
 
 
-  const db = require("./vehiculo/models");
+  const db = require("./musica/models");
 
   db.sequelize.sync()
     .then(() => {
@@ -22,13 +24,11 @@
     });
 
 
-  require("./vehiculo/routes/cliente.route")(app);
-  require("./vehiculo/routes/vehiculo.route")(app);
-  require("./vehiculo/routes/alquiler.route")(app);
+  require("./musica/routes/musica.route")(app);
 
 
   app.get("/", (req, res) => {
-    res.json({ message: "Bienvenido a la API de la vehiculos." });
+    res.json({ message: "Bienvenido a la API de la musica." });
   });
 
   const PORT = process.env.PORT || 8081;

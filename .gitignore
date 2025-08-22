@@ -1,2 +1,6 @@
-node_modules/
-.env
+/*
+
+!/API_UNIVERSIDAD
+!/API_UNIVERSIDAD/**
+
+/API_UNIVERSIDAD/node_modules

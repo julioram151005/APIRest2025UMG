@@ -4,8 +4,7 @@
   const app = express();
 
   const corsOptions = {
-    origin: "*"
-  //  origin: "http://localhost:8081"
+    origin: "http://localhost:8081"
   };
   
   app.use(cors(corsOptions));
@@ -13,7 +12,7 @@
   app.use(bodyParser.urlencoded({ extended: true }));
 
 
-  const db = require("./vehiculo/models");
+    const db = require("./API_UNIVERSIDAD/models");
 
   db.sequelize.sync()
     .then(() => {
@@ -24,18 +23,14 @@
     });
 
 
-  require("./vehiculo/routes/cliente.route")(app);
-  require("./vehiculo/routes/vehiculo.route")(app);
-  require("./vehiculo/routes/alquiler.route")(app);
-
+  require("./API_UNIVERSIDAD/routes/student.route.js")(app);
 
   app.get("/", (req, res) => {
-    res.json({ message: "Bienvenido a la API de la vehiculos." });
+    res.json({ message: "Bienvenido a la API de la UMG." });
   });
 
   const PORT = process.env.PORT || 8081;
   app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}.`);
   });
-
-  // https://apirest2025umg-vehiculos.onrender.com
+    

@@ -1,0 +1,43 @@
+[33m3c6d73b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2025-11-06 00:05:45 -0600}: reset: moving to 3c6d73b
+[33mf887b54[m HEAD@{2025-11-06 00:05:45 -0600}: checkout: moving from 3c6d73bcc8204261376583123fbb5910286f4cf0 to main
+[33m3c6d73b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2025-11-06 00:05:23 -0600}: checkout: moving from main to 3c6d73b
+[33mf887b54[m HEAD@{2025-11-06 00:04:07 -0600}: reset: moving to origin/main
+[33mf887b54[m HEAD@{2025-11-06 00:00:17 -0600}: reset: moving to origin/main
+[33mf887b54[m HEAD@{2025-11-06 00:00:10 -0600}: checkout: moving from cef4fd15e788b5b9010b309e5a8491bc29a5ad17 to main
+[33mcef4fd1[m HEAD@{2025-11-05 23:58:27 -0600}: reset: moving to cef4fd1
+[33m3c6d73b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2025-11-05 23:53:42 -0600}: reset: moving to 3c6d73b
+[33mfe8786f[m HEAD@{2025-11-05 23:51:47 -0600}: commit: Faltente
+[33m19c51fd[m HEAD@{2025-11-05 23:48:29 -0600}: pull --rebase origin main (start): checkout 19c51fdde6774a92875f6657c3d86be23989ca9d
+[33mf887b54[m HEAD@{2025-11-05 23:45:41 -0600}: commit: FALTANTES
+[33m17bed74[m HEAD@{2025-11-05 23:40:17 -0600}: commit: Faltante
+[33m3c6d73b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2025-10-05 20:58:50 -0600}: commit: Arreglado XD
+[33mb59acf9[m HEAD@{2025-10-05 20:47:25 -0600}: rebase (abort): returning to refs/heads/main
+[33mcef4fd1[m HEAD@{2025-10-05 20:43:03 -0600}: pull origin main --rebase (pick): Agregar API_UNIVERSIDAD como carpeta normal
+[33ma63549d[m HEAD@{2025-10-05 20:43:03 -0600}: pull origin main --rebase (pick): Quitar API_UNIVERSIDAD como submódulo
+[33m89094b9[m HEAD@{2025-10-05 20:43:03 -0600}: pull origin main --rebase (pick): Cambio de base de datos
+[33m68c9a7a[m HEAD@{2025-10-05 20:43:03 -0600}: pull origin main --rebase (pick): Primer commit de API_UNIVERSIDAD
+[33m854a151[m HEAD@{2025-10-05 20:43:03 -0600}: pull origin main --rebase (pick): Errores Colegidos
+[33mf62991f[m HEAD@{2025-10-05 20:43:03 -0600}: pull origin main --rebase (start): checkout f62991f0eb093d094238e4583cd223904a112413
+[33mb59acf9[m HEAD@{2025-10-05 20:39:40 -0600}: Branch: renamed refs/heads/main to refs/heads/main
+[33mb59acf9[m HEAD@{2025-10-05 20:39:34 -0600}: commit: Primer commit
+[33m4e34ab7[m HEAD@{2025-09-25 19:35:22 -0600}: commit: Parcial nube
+[33mab95ef3[m HEAD@{2025-09-09 11:39:20 -0600}: checkout: moving from main to main
+[33mab95ef3[m HEAD@{2025-09-09 11:37:39 -0600}: reset: moving to ab95ef36545b6551cb6c4df0d906e39b4cddb39a
+[33mab95ef3[m HEAD@{2025-09-07 15:48:43 -0600}: commit: Node.js 100%
+[33m9f3ed24[m HEAD@{2025-09-07 13:23:40 -0600}: commit: Añadi especialidad
+[33m4b9ac73[m HEAD@{2025-09-04 23:32:01 -0600}: commit: Adiciones a las asiganciones
+[33mfa3a6a6[m HEAD@{2025-08-28 23:54:17 -0600}: commit: Subir Api a render + package.json
+[33m1c1e94d[m HEAD@{2025-08-28 23:48:23 -0600}: commit: Bug Render
+[33mecc02c1[m HEAD@{2025-08-28 23:40:04 -0600}: commit: Subir a Render
+[33m0549393[m HEAD@{2025-08-26 23:10:07 -0600}: commit: Modelo Completos y funcionales
+[33m9a0817f[m HEAD@{2025-08-25 22:58:48 -0600}: commit: Descripcion de cursos, contraseña para estudiante y maestro
+[33m0c6ce6e[m HEAD@{2025-08-25 22:51:26 -0600}: commit: Cursos y Asignacion
+[33m6b6517b[m HEAD@{2025-08-24 21:31:56 -0600}: commit: Agregando archivos nuevos dentro de API_UNIVERSIDAD
+[33m6c6ec4c[m HEAD@{2025-08-24 21:30:48 -0600}: reset: moving to HEAD
+[33m6c6ec4c[m HEAD@{2025-08-24 21:26:49 -0600}: commit: Model Teacher
+[33m2de2f0d[m HEAD@{2025-08-24 21:24:10 -0600}: reset: moving to HEAD
+[33m2de2f0d[m HEAD@{2025-08-22 01:43:22 -0600}: commit: Subiendo server.js y carpeta API_UNIVERSIDAD
+[33mb0500bf[m HEAD@{2025-08-22 01:42:18 -0600}: reset: moving to HEAD
+[33mb0500bf[m HEAD@{2025-08-22 01:37:50 -0600}: commit (merge): Resuelto conflicto en server.js
+[33m1342b94[m HEAD@{2025-08-22 01:34:24 -0600}: Branch: renamed refs/heads/master to refs/heads/main
+[33m1342b94[m HEAD@{2025-08-22 01:32:34 -0600}: commit (initial): Errores Colegidos
